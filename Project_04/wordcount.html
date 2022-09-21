@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Count App</title>
+    <link rel="stylesheet" href="./wordcount.css" />
+  </head>
+  <body>
+    <div id="greeting">
+      <!-- here greeting comes -->
+      <!-- <h1>Good Morning</h1> -->
+    </div>
+    <!-- Basic area of the project -->
+    <div class="wrapper">
+      <!--Result box-->
+      <div class="count">
+        <!--Word count results-->
+        <div>
+          <h5 id="word-count">0</h5>
+          <p id="word">Words</p>
+        </div>
+        <!--character count results-->
+        <div>
+          <h5 id="charac-count">0</h5>
+          <p id="charac">Characters</p>
+        </div>
+
+        <!-- count line -->
+        <div>
+          <h5 id="charac-line">0</h5>
+          <p id="charLin">line</p>
+        </div>
+      </div>
+
+      <!--A place to input content-->
+      <div class="container">
+        <textarea
+          class="textbox-area"
+          rows="12"
+          placeholder="Start Typing here..."
+          id="tweet"
+          name="tweet"
+        ></textarea>
+        <div class="button-container">
+          <button id="btn" onclick="clearValue()">Click to clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./wordcount.js">
+      </script>
+  </body>
+</html>
